@@ -1,0 +1,1 @@
+These are the initial files I'll be using to build assignment 2 for Jen's course. They are all the final files from assignment 1.  They include plenty of unnecessary files, but I thought it would be good to start out with absolutely everything and track from there.
