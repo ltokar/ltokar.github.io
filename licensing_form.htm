@@ -16,17 +16,18 @@
       </header>
 
 <!--form row 1 -->
-  <form><!--usually there will also be an action for submission here; see form mail with php as one solution because SiteGround has/runs PHP; this form will not actually submit to a server until a solution is added -->
+  <form><!--usually there will also be an action for submission here; this is needed to make this work in the real world. Google form mail with php as one solution because SiteGround has/runs PHP; this form will not actually submit to a server until a solution is added -->
 
 <!--form row 2 -->
         <div class="row"><!--form row 1 contact-->
-      	   <div class="col-sm-6 form-group">
-		          <label for="name" class="control-label">Your name: <span class="glyphicon glyphicon-star"></span></label>
+      	   <div class="col-sm-6 form-group name-group">
+		          <label for="name" class="control-label">name: <span class="glyphicon glyphicon-star"></span></label>
 		          <input type="text" id="name" class="form-control">
+              <span class="help-block"></span>
       	   </div><!--end grid for row contact/name -->
       	 
             <div class="col-sm-6 form-group">
-	             <label for="email" class="control-label">Your email:</label>
+	             <label for="email" class="control-label">email:</label>
 	             <input type="text" id="email" class="form-control">
       	   </div> <!--end grid for row contact/email -->
          </div> <!--end row 2 form -->
@@ -37,26 +38,26 @@
       		    <fieldset>
 	      		     <legend class="control-label">Licenses available:</legend>
             <div class="radio">
-	      		   <label for="chocolate">
-	      			    <input type="radio" name="flavor" value="chocolate" id="chocolate" checked> Chocolate
+	      		   <label for="free-non-comm">
+	      			    <input type="radio" name="flavor" value="free-non-comm" id="free-non-comm" checked> free, non-commercial license
 	      		   </label>
             </div>
                         
               <div class="radio">
-	      		     <label for="vanilla">
-	      			      <input type="radio" name="flavor" value="vanilla" id="vanilla"> Vanilla
+	      		     <label for="restR">
+	      			      <input type="radio" name="flavor" value="restR" id="restR"> restricted license
 	      		     </label>
               </div>
                         
               <div class="radio">
-	      		     <label for="mintchoc">
-	      			      <input type="radio" name="flavor" value="mintchoc" id="mintchoc"> Mint Chocolate Chip
+	      		     <label for="commLic">
+	      			      <input type="radio" name="flavor" value="commLic" id="CommLic"> commercial license
 	      		     </label>
               </div>
                         
               <div class="radio">
-	      		     <label for="moosetracks">
-	      			      <input type="radio" name="flavor" value="moosetracks" id="moosetracks"> Moose Tracks
+	      		     <label for="commSpec">
+	      			      <input type="radio" name="flavor" value="commSpec" id="commSpec"> commercial license on spec
 	      		     </label>
               </div>
       		      </fieldset>            
@@ -65,22 +66,27 @@
 
 <!-- form row 4 drop down for song names -->
          <div class="row"> 
-            <div class="col-sm-12 form-group">
-      		    <label for="searchengine" class="control-label">Favorite search engine:</label>
-      		      <select id="searchengine" class="form-control">
+            <div class="col-sm-12 form-group search-group">
+      		    <label for="song2" class="control-label">Song to license:</label>
+      		      <select id="song2" class="form-control">
             			<option checked>Please select one:</option>
-            			<option value="google">Google</option>
-            			<option value="yahoo">Yahoo!</option>
-             			<option value="bing">Bing</option>
-            			<option value="other">Other</option>     			
+            			<option value="Early">Early</option>
+            			<option value="Midnight">Midnight</option>
+             			<option value="Walk">Walk With Me</option>
+            			<option value="">Always</option>
+                  <option value="Floating">Floating</option>
+                  <option value="Child">Like A Child</option>
+                  <option value="InOut">In and Out</option>     			
       		      </select>
+                <span class="help-block"></span>
+<!--use jQuery on the app.js page to insert messages inside this span tag pair that will appear underneath the song name selection box --> 
             </div> <!--end grid for row song names -->
          </div> <!--end row 4 form -->
 
    <!-- form row 5 comment box  -->      
          <div class="row">
             <div class="col-sm-12 form-group">
-      		    <label for="comments" class="control-label">Your comments:</label>
+      		    <label for="comments" class="control-label">Please describe the proposed use you wish covered by the license. Include urls to which project will be posted:</label>
       		      <textarea id="comments" class="form-control"></textarea>
             </div> <!--end grid for comment box-->
          </div> <!--end row 5 form -->
@@ -92,5 +98,6 @@
 
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/app4.js"></script>
 </body>
 </html>
