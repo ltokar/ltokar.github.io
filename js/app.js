@@ -46,7 +46,7 @@
 
 //this is error checking for required field completion when the submit button is clicked
 
-$('button').click(function(submit){
+$('#sbutton').click(function(submit){
 	if ($('#name').val().length == 0) {
  			$('.name-group .help-block').text('Please enter your name.');
  			$('.name-group').attr({
