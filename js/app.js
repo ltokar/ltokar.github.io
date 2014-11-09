@@ -41,7 +41,7 @@
  				class:'col-sm-6 form-group name-group'
  			})//end CSS attribute clear
  		}
- 	}); //end focusout
+ 	}); //end focusout end
 
 
 //this is error checking for required field completion when the submit button is clicked
