@@ -1,4 +1,7 @@
   $(document).ready (function(){
+
+  	//this is to fade in the appropriate player 
+
   	$('.STRplayerSM,.STRplayerLG').fadeOut(0.5).fadeIn(2000);
 
   	//this is to provide different feedback text below the selection box after the user makes a selection from the drop-down menu, and is based on which selection is made
