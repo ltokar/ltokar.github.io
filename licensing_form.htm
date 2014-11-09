@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Licensing Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      
+      <header class="row">
+        <div class="col-sm-12">
+            <h1>Licensing Form</h1>
+        </div> <!--end grid  -->
+      </header>
+
+<!--form row 1 -->
+  <form><!--usually there will also be an action for submission here; see form mail with php as one solution because SiteGround has/runs PHP; this form will not actually submit to a server until a solution is added -->
+
+<!--form row 2 -->
+        <div class="row"><!--form row 1 contact-->
+      	   <div class="col-sm-6 form-group">
+		          <label for="name" class="control-label">Your name: <span class="glyphicon glyphicon-star"></span></label>
+		          <input type="text" id="name" class="form-control">
+      	   </div><!--end grid for row contact/name -->
+      	 
+            <div class="col-sm-6 form-group">
+	             <label for="email" class="control-label">Your email:</label>
+	             <input type="text" id="email" class="form-control">
+      	   </div> <!--end grid for row contact/email -->
+         </div> <!--end row 2 form -->
+
+<!-- form row 3 license type -->
+         <div class="row">
+          <div class="col-sm-12 form-group">
+      		    <fieldset>
+	      		     <legend class="control-label">Licenses available:</legend>
+            <div class="radio">
+	      		   <label for="chocolate">
+	      			    <input type="radio" name="flavor" value="chocolate" id="chocolate" checked> Chocolate
+	      		   </label>
+            </div>
+                        
+              <div class="radio">
+	      		     <label for="vanilla">
+	      			      <input type="radio" name="flavor" value="vanilla" id="vanilla"> Vanilla
+	      		     </label>
+              </div>
+                        
+              <div class="radio">
+	      		     <label for="mintchoc">
+	      			      <input type="radio" name="flavor" value="mintchoc" id="mintchoc"> Mint Chocolate Chip
+	      		     </label>
+              </div>
+                        
+              <div class="radio">
+	      		     <label for="moosetracks">
+	      			      <input type="radio" name="flavor" value="moosetracks" id="moosetracks"> Moose Tracks
+	      		     </label>
+              </div>
+      		      </fieldset>            
+          </div> <!--end grid for row license type -->
+         </div> <!--end row 3 form -->
+
+<!-- form row 4 drop down for song names -->
+         <div class="row"> 
+            <div class="col-sm-12 form-group">
+      		    <label for="searchengine" class="control-label">Favorite search engine:</label>
+      		      <select id="searchengine" class="form-control">
+            			<option checked>Please select one:</option>
+            			<option value="google">Google</option>
+            			<option value="yahoo">Yahoo!</option>
+             			<option value="bing">Bing</option>
+            			<option value="other">Other</option>     			
+      		      </select>
+            </div> <!--end grid for row song names -->
+         </div> <!--end row 4 form -->
+
+   <!-- form row 5 comment box  -->      
+         <div class="row">
+            <div class="col-sm-12 form-group">
+      		    <label for="comments" class="control-label">Your comments:</label>
+      		      <textarea id="comments" class="form-control"></textarea>
+            </div> <!--end grid for comment box-->
+         </div> <!--end row 5 form -->
+
+    <!-- form row 5 submit button  -->     	
+          <button name="submit" type="submit" class="btn btn-danger btn-lg">Submit</button>
+  </form>
+</div> <!--end container div -->
+
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
