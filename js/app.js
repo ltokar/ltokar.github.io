@@ -53,12 +53,12 @@
      $('#inSitu-btn').hover(function(){
      		console.log('The spec button was hovered over!');
      		$('#inSitu-btn').css({
-     			backgroundColor: 'red'
-     		}); // end css
-     }, function(){
+     			backgroundColor: 'green'
+     		}); // end green css
+     		}, function(){
      		console.log('The spec button was left!');
      		$('#inSitu-btn').css({
-     			backgroundColor: 'blue'
+     			backgroundColor: '#007ACC'
      		}); //end blue css
-     }); //end spec button hover
+          }); //end spec button hover
    }); //end ready
